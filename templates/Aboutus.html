@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+background: #CEECF5;
+
+}
+
+/* Style the header */
+header {
+  background-color: #0B0B61;
+  padding: 35px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: white;
+  padding: 10px;
+}
+
+
+article {
+  float: left;
+  padding: 30px;
+  width: 80%;
+  background-color: white;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color:#0B0B61;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>About Us</h2>
+</header>
+
+<section>
+<nav></nav>
+
+  <article>
+    <h1>Indian Airlines</h1>
+    <p>With Ground Handling setup at over 50 airports in India, Air India Airport Services is a One Stop Shop for the comprehensive range of GH services including Security, Flight Operations & Technical Handling services which will be provided through its parent company. Air India Airport Services with the experience and expertise, coupled with a young and vibrant workforce is willing to take on any challenge.We operate one of the youngest fleets in the world. And regular upgrades mean we'll continue to provide our passengers with a superior flight experience.</p>
+    <p>We provide:<ul>
+     <li>High customer satisfaction</li>
+     <li>Quality services</li>
+     <li>97% Flight time punctualaity</li>
+     <li>Best quality and lowest possible prices</li>
+
+    </ul></p>
+
+
+  </article>
+</section>
+
+<footer>
+ <p> We also provide advertisement services to clients who are willing to advertise their product and services on board with a minimun fee. </p>
+  <p style="color:powderblue";>contact us: 6360222973</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Book Ticket</title>
+
+</head>
+
+<style>
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #0B0B61;
+  font-size: 20px;
+  color: white;
+}
+footer {
+  background-color:#0B0B61;
+  padding: 0px;
+  text-align: center;
+  color: white;
+}
+</style>
+<body bgcolor="#CEECF5">
+
+<div class="header">
+
+<h1><i>Welcome To Indian Airlines</i></h1>
+
+</div>
+<br><br>
+<form action="home" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Book">
+
+</form>
+
+<footer>
+ <p>Hope you enjoyed your experience.....</p>
+
+</footer>
+</body>
+
+</html>
